@@ -19,9 +19,10 @@ body{
 	background-attachment: fixed;
     
 }
-.conteiner-equipe{
+
+.conteiner-contato{
     height: 650px;
-    background: url(carro3.jpg);
+    background: url(contato.jpg);
     background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -81,6 +82,7 @@ nav ul li a{
     
 }
 nav li{
+    text-shadow: 1px 1px 1px black, -1px 1px 1px black, 1px -1px 1px black, -1px -1px 1px black;
     border-radius: 30px;
     margin: 3px;
     padding: 0.8em;
@@ -212,6 +214,16 @@ nav li:hover{
 
 /*-------------------------------------------------------------------------//
 //equipe*/
+
+.conteiner-equipe{
+    height: 650px;
+    background: url(carro3.jpg);
+    background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
 .nossotime{
     color: #fff;
     padding-top: 60px;
@@ -259,3 +271,88 @@ nav li:hover{
     width: 70%;
     margin: auto;
 }
+
+/*-------------------------------------------------------------------------//
+//contato*/
+
+.conteiner-formulario{
+    height: 500px;
+    background: #dee0e3;
+    width: 100%;
+    border-top: grey solid 10px;
+    
+    
+}
+.conteudo-contato{
+    color: grey;
+    
+    width: 70%;
+    margin: auto;
+   
+    
+}
+.texto-contato hr{
+    width: 80px;
+    margin: auto;
+    height: 2px;
+    background: grey;
+    margin-bottom: 10px;
+    
+}
+.texto-contato {
+    text-align: center;
+}
+.formulario{
+    display: flex;
+    justify-content: space-around;
+     
+     
+}
+.formulario input{
+   
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    width: 550px;
+    line-height: 30px;
+    padding: 0.5em;
+    box-sizing: border-box;
+    
+}
+.input-contato{
+    padding-top: 30px;
+}
+.coluna-direita{
+    
+    width: 600px;
+    float: left;
+    
+}
+.formulario label{
+    flex-direction: column;
+}
+.coluna-esquerda{
+    
+    width: 600px;
+}
+.input-texto textarea{
+    width: 550px;
+    height: 186px;
+    margin-top: 28px;
+    padding: 0.5em;
+}
+.submit input{
+    font-size: 20px;
+    height: 60px;
+    width: 200px;
+    line-height: 1em;
+    background: darkgoldenrod;
+    color: #fff;
+}
+.submit{
+    padding-top: 40px;
+    width: 200px;
+    
+    margin: auto;
+}
+
