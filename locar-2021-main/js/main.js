@@ -25,13 +25,13 @@ function setList(veiculos){
                 <div class="card mb-3" style="max-width: 100%;\">"
                     <div class="row g-0"> 
                         <div class="col-md-4">
-                            <img src="+ veiculos[key].image" class="img-fluid rounded-start img-veiculo" alt="..."></img>
+                            <img src="+ veiculos[key].imageUri" class="img-fluid rounded-start img-veiculo" alt="..."></img>
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
-                                <h5 class="card-title">Volkswagen Amarok 3.0 V6 CD Highline 4x4 2019</h5>
-                                <p class="card-text">Diesel, Final da placa 0, airbag motorista, alarme, freios ABS, airbag passageiro, airbag lateral</p>
-                                <p class="card-text" style="text-align: right"><b>R$ 215.000,00</b></p>
+                                <h5 class="card-title">"+ veiculos[key].name"</h5>
+                                <p class="card-text">"+ veiculos[key].description"</p>
+                                <p class="card-text" style="text-align: right"><b>"+ formatValue(veiculos[key].price)"</b></p>
                             </div>
                         </div>
                     </div>
@@ -39,6 +39,13 @@ function setList(veiculos){
             </div>
     }
     document.getElementById("vehicles-list").innerHTML = lista;
+}
+
+function formatValue(value){
+    var str = parseFloat(value).toFixed(2)
+    str = str.replace('.',',');
+    str = 'R$' + str;
+    return str;
 }
 
 buscarCarros();
