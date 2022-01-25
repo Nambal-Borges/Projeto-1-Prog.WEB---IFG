@@ -1,0 +1,23 @@
+.btn{
+    background-color: rgba(79, 79, 79);
+    color: #fff;
+    display: inline-block;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 20px;
+    transition: ease .5s all;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: rgba(54, 54, 54);
+}
+
+.btn.orange{
+    background-color: #fed136;
+}
+
+.btn.orange:hover{
+    background-color: black;
+}
