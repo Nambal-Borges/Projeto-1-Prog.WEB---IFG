@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;0,700;0,800;1,100;1,200;1,400&display=swap');
+
+
+a{
+    text-decoration: none;
+}
+body{
+    background: #e4e2e2;
+    height: 1600px;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    
+}
+#conteiner_master{
+    background: #ffffff;
+    width: 1045px;
+    height: 1100px;
+    margin: auto;
+    position: relative;
+   
+    
+}
+@media screen and (max-width: 600px) {
+    #conteiner_master{
+        width: 100%;
+        
+    }
+
+}
+header{
+   
+    box-sizing: border-box;
+    display: flex;
+    margin: auto;
+    width: 90%;
+    max-width: 1154px;
+    padding-top: 50px;
+    justify-content: space-between;
+
+}
+@media screen and (max-width: 600px) {
+    #header{
+        display: none ;
+    }
+
+}
+#logo{
+    
+    width: 300px;
+    text-shadow: 0 4px 1.5px #cbcbcb;
+    font-weight: 800;
+    font-size: 2.5em;
+}
+#nav{
+    
+    z-index: 2;
+    margin-top: 30px;
+    justify-content: space-around;
+    width: 400px;
+    height: 40px;
+    
+    display: flex;
+}
+#nav a{
+    
+    font-size: 15px;
+    font-weight: 100;
+    letter-spacing: 8px;
+    color: #00000093 ;
+}
+#nav a:hover{
+    color: #6C63FF;
+    
+}
+
+.circle{
+    z-index: 1;
+    position: absolute;
+    clip-path: ellipse(200px 100px at 88.5% 5%);
+    height: 100%;
+    width: 100%;
+    background: #e4e2e2;
+}
+
+
+/*--------------------------------------------------------------------------------------------------*/
+
+
+.conteiner_main1{
+    text-shadow: 0 4px 1.5px #cbcbcb;
+    margin: auto;
+    justify-content: space-around;
+    
+    width: 90%;
+    align-items: center;
+    display: flex;
+    margin-top: 100px;  
+}
+.conteiner_main1 img{
+    
+    width: 400px;
+    
+}
+.conteiner_main1 span{
+
+    
+    font-weight: 800;
+    font-size: 2rem;
+     
+}
+.conteiner_main2{
+    text-shadow: 0 4px 1.5px #cbcbcb;
+    height: 130px;
+    margin: auto;
+    width: 22%;
+    font-weight: 400 bold;
+    font-size: 2em;
+    display: flex;
+    margin-top: 100px;  
+}
+.conteiner_main3{
+    /*border: solid black 1px;*/
+    margin: auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+.conteiner_main3 form{
+    
+    width: 48%;
+}
+.conteiner_main3 input:link{
+    border-radius: 10px;
+    border: solid #6C63FF 2px;
+    margin-top: 20px;
+    display: flex;
+    width: 90%;
+    line-height: 3em;
+
+}
+.conteiner_main3 input{
+    
+    border-radius: 10px;
+    border: solid #6C63FF 2px;
+    margin-top: 20px;
+    display: flex;
+    width: 90%;
+    line-height: 3em;
+    
+}
+
+.texto_lateral_main{
+    
+    height: 225px;
+    display: flex;
+    border: solid black 1px;
+    border-radius: 2%;
+    margin-top: 20px;
+    display: flex;
+    width: 48%;
+}
+.texto_lateral_main p{
+    color: #000000;
+    font-weight: 100;
+    padding: 10px;
+    
+}
+.conteiner_main3 input::placeholder{
+    font-size: 1.2em;
+    font-weight: 800;
+    color: #000000;
+    
+   
+ 
+    
+}
+.botao_main{
+    padding-top: 70px;
+    width: 400px;
+    
+    margin: auto;
+}
+.botao_main input{
+    
+    border-radius: 10px;
+    border: none;
+    font-size: 2em;
+    font-weight: 800;
+    color: #6C63FF;
+    background: #000000;
+    height: 50px;
+    width: 400px;
+}
+.botao_main input:hover{
+    cursor: pointer;
+    animation-name: fa-blink;
+    -webkit-animation: fa-blink 2.75s linear infinite;
+    -moz-animation: fa-blink 2.75s linear infinite;
+    -ms-animation: fa-blink 2.75s linear infinite;
+    -o-animation: fa-blink 2.75s linear infinite;
+    animation: fa-blink 2.75s linear infinite;
+}
+
+@keyframes fa-blink {
+    0% { opacity: 1; }
+    20% { opacity: 0.55;background: #6C63FF; color: black; }
+    50% { opacity: 1; }
+    70% { opacity: 0.55;}
+    100% { opacity: 1; background: #000000; color: #6C63FF;}
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+
+.rodape{
+    margin-top: 200px;
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    background: #6C63FF;
+}
+.conteudo_rodape{
+    max-width: 1040px;
+    justify-content: space-between;
+    display: flex;
+    padding-top: 100px;
+    width: 70%;
+    margin: auto;
+}
+.logo_rodape{
+    font-weight: 800;
+    font-size: 3em;
+    text-shadow: 0 4px 1.5px #0000003f;
+}
+.nav_rodape{
+    
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+}
+.nav_rodape a{
+    padding: 10px;
+    color: #000000;
+    font-weight: 800;
+}
+.roda-rodape{
+    font-size: 0.8em;
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+
